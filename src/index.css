@@ -1,15 +1,15 @@
-@media (prefers-color-scheme: light) {
-  :root {
-    --text-color: #213547;
-    --background-color: #fff;
-    --button-color: #f9f9f9;
-  }
-}
-
 :root {
   --text-color: rgba(255, 255, 255, 0.87);
   --background-color: #242424;
   --button-color: #1a1a1a;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #213547;
+    --background-color: #fff;
+    --button-color: #e1e1e1;
+  }
 }
 
 :root {
