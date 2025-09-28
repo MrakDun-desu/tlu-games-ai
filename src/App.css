@@ -1,0 +1,59 @@
+.content {
+  max-inline-size: 1024px;
+  box-sizing: content-box;
+  padding: 1em;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.message-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+
+  .username-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+  }
+
+  input {
+    font-size: inherit;
+    padding: 0.4em 0.8em;
+    border-radius: 0.4em;
+  }
+
+  textarea {
+    flex-grow: 1;
+    font-family: inherit;
+    padding: 0.4em 0.8em;
+    box-sizing: content-box;
+    border-radius: 0.4em;
+    align-self: stretch;
+  }
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.8em;
+}
+
+.chat-message {
+  padding: 0.4em 0.8em;
+  border: 1px solid var(--text-color);
+  border-radius: 0.4em;
+  display: flex;
+  align-items: start;
+  gap: .4em;
+}
+
+@media screen and (max-width: 768px) {
+  .message-form .username-container {
+    width: 100%;
+  }
+}

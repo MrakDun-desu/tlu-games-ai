@@ -2,16 +2,15 @@
   "name": "tlu-games-ai",
   "homepage": "https://mrakdun-desu.github.io/tlu-games-ai/",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@radix-ui/themes": "^3.2.1",
     "firebase": "^12.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
